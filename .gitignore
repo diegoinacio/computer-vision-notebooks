@@ -5,3 +5,11 @@ __pycache__/
 
 ### Jupyter Notebook ###
 .ipynb_checkpoints
+
+####################
+### Page Scripts ###
+####################
+
+### NodeJS ###
+node_modules/
+package-lock.json
