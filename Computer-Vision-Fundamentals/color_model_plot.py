@@ -6,24 +6,27 @@ from plotly.offline import init_notebook_mode, iplot
 from plotly.graph_objs import *
 init_notebook_mode(connected=True)
 
+# ! Identity Base
+iBASE = np.array([
+    [0, 1, 0, 1, 0, 1, 0, 1],
+    [0, 0, 1, 1, 0, 0, 1, 1],
+    [0, 0, 0, 0, 1, 1, 1, 1]
+])
+base_pairs = [
+    (0, 1), (1, 3), (3, 2), (2, 0), (4, 5), (5, 7), (7, 6), (6, 4), (0, 4), (1, 5), (2, 6), (3, 7)
+]
 
 def plotRGB(points):
-    ##########################
-    # Identity visualization #
-    ##########################
-    # Create identity points
-    iRGB = np.array([
-        [0, 1, 0, 1, 0, 1, 0, 1],
-        [0, 0, 1, 1, 0, 0, 1, 1],
-        [0, 0, 0, 0, 1, 1, 1, 1]
-    ])
+    ###############################
+    #Identity model visualization #
+    ###############################
     # Identity point color
-    ipColor = [f'rgb({int(r*255)}, {int(g*255)}, {int(b*255)})' for r, g, b in zip(*iRGB)]
+    ipColor = [f'rgb({int(r*255)}, {int(g*255)}, {int(b*255)})' for r, g, b in zip(*iBASE)]
     # Identity point scatter
     ipMODEL = Scatter3d(
-        x=iRGB[0],
-        y=iRGB[1],
-        z=iRGB[2],
+        x=iBASE[0],
+        y=iBASE[1],
+        z=iBASE[2],
         mode='markers',
         hovertext=[f'iPoint {e}' for e in range(8)],
         marker={
@@ -32,13 +35,12 @@ def plotRGB(points):
         }
     )
     # Create identity edges
-    edge_pairs = [(0, 1), (1, 3), (3, 2), (2, 0), (4, 5), (5, 7), (7, 6), (6, 4), (0, 4), (1, 5), (2, 6), (3, 7)]
     x_lines, y_lines, z_lines, c_lines = [], [], [], []
-    for p in edge_pairs:
+    for p in base_pairs:
         for i in range(2):
-            x_lines.append(iRGB[0][p[i]])
-            y_lines.append(iRGB[1][p[i]])
-            z_lines.append(iRGB[2][p[i]])
+            x_lines.append(iBASE[0][p[i]])
+            y_lines.append(iBASE[1][p[i]])
+            z_lines.append(iBASE[2][p[i]])
             c_lines.append(ipColor[p[i]])
         x_lines.append(None)
         y_lines.append(None)
@@ -98,9 +100,32 @@ def plotRGB(points):
 
 
 def plotXYZ(points, colors, m):
-    ##########################
-    # Identity visualization #
-    ##########################
+    ###############################
+    # Identity base visualization #
+    ###############################
+    # Create identity edges
+    x_lines, y_lines, z_lines, c_lines = [], [], [], []
+    for p in base_pairs:
+        for i in range(2):
+            x_lines.append(iBASE[0][p[i]])
+            y_lines.append(iBASE[1][p[i]])
+            z_lines.append(iBASE[2][p[i]])
+            c_lines.append("gray")
+        x_lines.append(None)
+        y_lines.append(None)
+        z_lines.append(None)
+        c_lines.append('rgb(1, 0, 0)')
+    # Identity edge scatter
+    ieBASE = Scatter3d(
+        x=x_lines,
+        y=y_lines,
+        z=z_lines,
+        mode='lines',
+        line={'color': c_lines, 'dash': 'dot', 'width': 2}
+    )
+    ################################
+    # Identity model visualization #
+    ################################
     # Create identity points
     iRGB = np.array([
         [0, 1, 0, 1, 0, 1, 0, 1],
@@ -163,7 +188,7 @@ def plotXYZ(points, colors, m):
     ##########################
     # Visualization settings #
     ##########################
-    DATA = [ipMODEL, ieMODEL, MODEL]
+    DATA = [ipMODEL, ieMODEL, MODEL, ieBASE]
     # Layout
     layout = Layout(
         title='RGB color model',
