@@ -6,10 +6,13 @@ __pycache__/
 ### Jupyter Notebook ###
 .ipynb_checkpoints
 
-####################
-### Page Scripts ###
-####################
+###################
+### Page Assets ###
+###################
 
 ### NodeJS ###
 node_modules/
 package-lock.json
+
+# live sass compiler
+*.css.map
