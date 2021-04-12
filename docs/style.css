@@ -1,0 +1,49 @@
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: auto;
+  width: 736px;
+  font: 20px Helvetica, sans-serif;
+  background-color: #252525;
+  color: gray;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin: 1em 0 1em 0;
+  font-family: "Passion One", cursive;
+  color: white;
+}
+
+h2 {
+  margin: 1em 0 1em 0;
+}
+
+article {
+  display: block;
+  text-align: left;
+  width: 650px;
+  margin: 0 auto;
+}
+
+a {
+  color: #26bbd9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.signature {
+  margin: 1em 0 1em 0;
+}
