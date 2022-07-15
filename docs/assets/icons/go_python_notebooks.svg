@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 16" width="300px">
+  <defs>
+    <style>
+      .bg {
+        fill: black;
+        stroke: gray;
+        stroke-width: 0.03em;
+        stroke-dasharray: 2px;
+        stroke-linecap: round;
+      }
+
+      .bg:hover {
+        fill: red;
+      }
+
+      text {
+        font-size: 7px;
+        fill: white;
+        font-family: CourierNewPS-BoldMT, Courier New;
+      }
+
+      .arrow {
+        font-weight: 700;
+        text-anchor: middle;
+      }
+
+      .verb {
+        font-weight: 300;
+        text-anchor: left;
+      }
+
+      .noun {
+        font-weight: 700;
+        text-anchor: left;
+      }
+    </style>
+  </defs>
+  <title>visit_page</title>
+  <g id="button">
+    <rect class="bg" x="2" y="2" width="116" height="12" rx="6" />
+    <text class="arrow" transform="translate(7 10)">
+      >
+      <animateTransform attributeName="transform" attributeType="XML" type="translate" repeatCount="indefinite"
+        values="8 10; 12 10; 8 10; 12 10; 10 10; 10 10" keyTimes="0; 0.09; 0.1; 0.19; 0.2; 1" dur="2s" begin="-0.5s" />
+    </text>
+    <text class="verb" transform="translate(16 10)">go to</text>
+    <text class="noun" transform="translate(42 10)">Python Notebooks</text>
+  </g>
+</svg>
