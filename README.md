@@ -1,6 +1,6 @@
 # Computer Vision Notebooks
 
-[![Computer Vision Notebooks](social-preview.png)](https://diegoinacio.github.io/computer-vision-notebooks/)
+[![Computer Vision Notebooks](docs/assets/images/social-preview.png)](https://diegoinacio.github.io/computer-vision-notebooks/)
 
 This is an `authorial collection` of fundamental _python recipes_ in notebook format. I started this project with the sole purpose of helping people to understand **Computer Vision** and **Digital Image Processing** concepts as clearly and succinctly as I could.
 
