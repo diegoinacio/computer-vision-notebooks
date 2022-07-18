@@ -9,10 +9,6 @@
         stroke-linecap: round;
       }
 
-      .bg:hover {
-        fill: red;
-      }
-
       text {
         font-size: 7px;
         fill: black;
