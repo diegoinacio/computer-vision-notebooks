@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94 16" width="235px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 16" width="210px">
   <defs>
     <style>
       .bg {
@@ -34,13 +34,13 @@
   </defs>
   <title>visit_page</title>
   <g id="button">
-    <rect class="bg" x="2" y="2" width="90" height="12" rx="6" />
+    <rect class="bg" x="2" y="2" width="80" height="12" rx="6" />
     <text class="arrow" transform="translate(7 10)">
       >
       <animateTransform attributeName="transform" attributeType="XML" type="translate" repeatCount="indefinite"
         values="8 10; 12 10; 8 10; 12 10; 10 10; 10 10" keyTimes="0; 0.09; 0.1; 0.19; 0.2; 1" dur="2s" begin="-1.5s" />
     </text>
     <text class="verb" transform="translate(16 10)">visit</text>
-    <text class="noun" transform="translate(41 10)">index page</text>
+    <text class="noun" transform="translate(41 10)">cookbook</text>
   </g>
 </svg>

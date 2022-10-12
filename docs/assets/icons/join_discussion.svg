@@ -2,7 +2,7 @@
   <defs>
     <style>
       .bg {
-        fill: white;
+        fill: black;
         stroke: gray;
         stroke-width: 0.03em;
         stroke-dasharray: 2px;
@@ -11,9 +11,8 @@
 
       text {
         font-size: 7px;
-        fill: black;
+        fill: white;
         font-family: CourierNewPS-BoldMT, Courier New;
-        /* font-weight: 700; */
       }
 
       .arrow {
