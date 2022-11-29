@@ -11,7 +11,7 @@
 
       text {
         font-size: 7px;
-        fill: black;
+        fill: white;
         font-family: CourierNewPS-BoldMT, Courier New;
       }
 
@@ -28,7 +28,6 @@
       .noun {
         font-weight: 700;
         text-anchor: left;
-        fill: hsl(189, 70%, 50%);
       }
     </style>
   </defs>
