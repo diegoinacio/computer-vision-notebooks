@@ -16,4 +16,8 @@ This project is part of the collection [Python Notebooks](https://diegoinacio.gi
 
 [![go python notebooks](docs/assets/icons/go_python_notebooks.svg)](https://diegoinacio.github.io/python-notebooks/)
 
+If you feel that something here has helped you in somehow, please consider [supporting](https://ko-fi.com/diegoinacio/) this project:
+
+[![support this project](docs/assets/icons/support_this_project.svg)](https://ko-fi.com/diegoinacio/)
+
 Created with ❤️ by [Diego Inácio](https://diegoinacio.github.io/)
