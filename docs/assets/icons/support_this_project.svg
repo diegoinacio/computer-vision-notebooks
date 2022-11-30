@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 16" width="300px">
+  <defs>
+    <style>
+      .bg {
+        fill: black;
+        stroke: gray;
+        stroke-width: 0.03em;
+        stroke-dasharray: 2px;
+        stroke-linecap: round;
+      }
+
+      text {
+        font-size: 7px;
+        fill: white;
+        font-family: CourierNewPS-BoldMT, Courier New;
+      }
+
+      .cup {
+        fill: none;
+        stroke: gray;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 0.5px;
+      }
+
+      .heart {
+        text-anchor: middle;
+      }
+
+      .verb {
+        font-weight: 700;
+        text-anchor: left;
+      }
+
+      .noun {
+        font-weight: 300;
+        text-anchor: left;
+      }
+    </style>
+  </defs>
+  <title>visit_page</title>
+  <g id="button">
+    <rect class="bg" x="2" y="2" width="116" height="12" rx="6" />
+    <path class="cup" transform="translate(6.75 3.5)"
+      d="M11.1,5.15a5.13,5.13,0,0,1-1,0V1.92h.65a1.45,1.45,0,0,1,1.49,1.4v.11A1.61,1.61,0,0,1,11.1,5.15m2.79-2.27a3.08,3.08,0,0,0-1.28-2,3.44,3.44,0,0,0-2-.61H.73A.51.51,0,0,0,.25.76V7.6A1.45,1.45,0,0,0,1.75,9h6.7l.3,0a1.91,1.91,0,0,0,1.35-2.1c2.48.14,4.23-1.61,3.79-3.94" />
+    <g transform="translate(12 10)">
+      <text class="heart">
+        ❤️
+        <animateTransform attributeName="transform" attributeType="XML" type="scale" repeatCount="indefinite"
+          values="0.75 0.75; 0.9 0.9; 0.75 0.75" dur="1s" />
+      </text>
+    </g>
+    <text class="verb" transform="translate(25 10)">support</text>
+    <text class="noun" transform="translate(60 10)">this project</text>
+  </g>
+</svg>
