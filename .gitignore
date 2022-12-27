@@ -16,3 +16,15 @@ package-lock.json
 
 # live sass compiler
 *.css.map
+
+######################
+### Tests and Temp ###
+######################
+
+### Development files ###
+.env
+
+### Image files ###
+_temp*.png
+_temp*.jpg
+_temp*.jpeg
