@@ -12,9 +12,9 @@ You can join the [discussion](https://github.com/diegoinacio/computer-vision-not
 
 [![join discussion](docs/assets/icons/join_discussion.svg)](https://github.com/diegoinacio/computer-vision-notebooks/discussions)
 
-This project is part of the collection [Python Notebooks](https://diegoinacio.github.io/python-notebooks/), which is a gathering of cookbooks on **Computer Science**, **Data Science**, **Machine Learning**, **Computer Vision** and more.
+This project is part of the collection [Python Notebooks for AI](https://diegoinacio.github.io/python-notebooks-for-ai/), which is a gathering of cookbooks on **Computer Science**, **Data Science**, **Machine Learning**, **Computer Vision** and more.
 
-[![go python notebooks](docs/assets/icons/go_python_notebooks.svg)](https://diegoinacio.github.io/python-notebooks/)
+[![go python notebooks](docs/assets/icons/go_python_notebooks.svg)](https://diegoinacio.github.io/python-notebooks-for-ai/)
 
 If you feel that something here has helped you in somehow, please consider [supporting](https://ko-fi.com/diegoinacio/) this project:
 
